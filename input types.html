@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            form and the input types
+        </title>
+    </head>
+    <body>
+        <form>
+            <label for="username">UserName:</label><br>
+            <input type="text" placeholder="username"  required> <br>
+            <label for="password">Password:</label><br>
+            <input type="password" placeholder="password"  required><br>
+            <label for="email">Enter Your E-mail:</label><br>
+            <input type="email" placeholder="@mail.com" id="email" required name="myMail"><br>
+            <p>languages</p>
+            <label for="css">CSS</label>
+            <input type="radio" name="languages" id="css">
+            
+            <label for="html">html</label>
+            <input type="radio" name="languages" id="html">
+           
+            <label for="js">js</label>
+            <input type="radio" name="languages" id="js">
+
+            <p>languages</p>
+            <label for="css1">CSS</label>
+            <input type="checkbox" name="languages" id="css1">
+            
+            <label for="html1">html</label>
+            <input type="checkbox" name="languages" id="html1">
+           
+            <label for="js1">js</label>
+            <input type="checkbox" name="languages" id="js1">
+            <br>
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor"><br><br><br>
+
+            <label for="date">Select your birthday date:</label>
+            <input type="date" id="date" name="my date"><br>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+                        <!-- type ===> (date) refer to the date only but (datetime-local) refer to the date and the time together -->
+            <label for="monthDate">Birthday (date and time):</label>
+            <input type="month" id="monthDate" name="myMonthDate"><br>
+                        <!-- appears the month and year only and month was written in letters not numbers -->
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt"><br>
+            <!-- type ====> (time) used to apear the time only -->
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week"> <br><br><br>
+            <!-- type ====> (week) used to apear at which week are in the year and the days name and date(used as calender) and also appears the year  -->
+
+
+
+
+            <label for="number">my fav number:</label>
+            <input type="number" id="number" name="mynumber"><br>
+            <!--if i want to select max and min values to this numbers, i will put this attributes====> (max="" , min="") --> 
+            <label for="number">my fav number:</label>
+            <input type="number" id="number" name="mynumber" max="10" min="0"><br>
+
+            <label for="range"> select your range:</label><br>
+            <input type="range" id="range" name="myRange"><br>
+
+            <label for="file">Drag your cv file:</label><br><br>
+            <input type="file" id="file" name="myFile"><br><br>
+             <!-- if i want to select more than one file, i will insert (multiple) attribute -->
+             <label for="file">Drag your cv file:</label><br><br>
+            <input type="file" id="file" name="myFile" multiple="true"><br><br>
+
+            <label for="url">Drag your site url:</label><br><br>
+            <input type="url" id="url" name="mySite"><br><br>
+
+            <label for="gsearch"> search here:</label><br>
+            <input type="search" id="gsearch" name="googleSearch">
+            <input type="submit" value="Search">
+            <br><br>
+            
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <br><br>
+
+            <input type="submit" value="login">
+            <input type="reset" value="reset">
+
+        </form>
+    </body>
+    <!-- for attribute depend on id -->
